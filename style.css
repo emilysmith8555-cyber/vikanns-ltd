@@ -642,3 +642,16 @@ footer { background: #003d24; color: var(--white); padding: 50px 24px 20px; }
 
 /* ---------------- Booking form labels ---------------- */
 .booking-label { font-size: 0.85rem; font-weight: 600; color: var(--green-dark); margin-bottom: 2px; margin-top: 4px; }
+
+/* ---------------- Screen-reader-only labels ---------------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

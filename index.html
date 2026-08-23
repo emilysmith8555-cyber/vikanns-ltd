@@ -81,25 +81,36 @@
 
     <div class="elig-step active" data-step="1">
       <h3>Personal Information</h3>
-      <input type="text" name="full_name" placeholder="Full Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="text" name="whatsapp" placeholder="WhatsApp Number" required>
-      <input type="number" name="age" placeholder="Age" required min="10" max="100">
-      <input type="text" name="country_residence" placeholder="Country of Residence" required>
+      <label for="elig-full-name" class="sr-only">Full Name</label>
+      <input type="text" id="elig-full-name" name="full_name" placeholder="Full Name" required>
+      <label for="elig-email" class="sr-only">Email</label>
+      <input type="email" id="elig-email" name="email" placeholder="Email" required>
+      <label for="elig-whatsapp" class="sr-only">WhatsApp Number</label>
+      <input type="text" id="elig-whatsapp" name="whatsapp" placeholder="WhatsApp Number" required>
+      <label for="elig-age" class="sr-only">Age</label>
+      <input type="number" id="elig-age" name="age" placeholder="Age" required min="10" max="100">
+      <label for="elig-country" class="sr-only">Country of Residence</label>
+      <input type="text" id="elig-country" name="country_residence" placeholder="Country of Residence" required>
     </div>
 
     <div class="elig-step" data-step="2">
       <h3>Academic Background</h3>
-      <input type="text" name="qualification" placeholder="Highest Qualification" required>
-      <input type="text" name="institution" placeholder="Institution">
-      <input type="text" name="field_of_study" placeholder="Field of Study">
-      <input type="text" name="grade" placeholder="Grade / GPA">
-      <input type="text" name="graduation_year" placeholder="Graduation Year">
+      <label for="elig-qualification" class="sr-only">Highest Qualification</label>
+      <input type="text" id="elig-qualification" name="qualification" placeholder="Highest Qualification" required>
+      <label for="elig-institution" class="sr-only">Institution</label>
+      <input type="text" id="elig-institution" name="institution" placeholder="Institution">
+      <label for="elig-field" class="sr-only">Field of Study</label>
+      <input type="text" id="elig-field" name="field_of_study" placeholder="Field of Study">
+      <label for="elig-grade" class="sr-only">Grade / GPA</label>
+      <input type="text" id="elig-grade" name="grade" placeholder="Grade / GPA">
+      <label for="elig-grad-year" class="sr-only">Graduation Year</label>
+      <input type="text" id="elig-grad-year" name="graduation_year" placeholder="Graduation Year">
     </div>
 
     <div class="elig-step" data-step="3">
       <h3>Study Preference</h3>
-      <select name="degree_level" required>
+      <label for="elig-degree-level" class="sr-only">Preferred Degree Level</label>
+      <select id="elig-degree-level" name="degree_level" required>
         <option value="">Preferred Degree Level</option>
         <option>Bachelor's</option>
         <option>Master's</option>
@@ -109,8 +120,10 @@
         <option>Vocational</option>
         <option>Certificate</option>
       </select>
-      <input type="text" name="preferred_field" placeholder="Preferred Field">
-      <input type="text" name="preferred_intake" placeholder="Preferred Intake">
+      <label for="elig-preferred-field" class="sr-only">Preferred Field</label>
+      <input type="text" id="elig-preferred-field" name="preferred_field" placeholder="Preferred Field">
+      <label for="elig-preferred-intake" class="sr-only">Preferred Intake</label>
+      <input type="text" id="elig-preferred-intake" name="preferred_intake" placeholder="Preferred Intake">
     </div>
 
     <div class="elig-step" data-step="4">
@@ -126,7 +139,8 @@
 
     <div class="elig-step" data-step="5">
       <h3>English Language</h3>
-      <select name="english_test" required>
+      <label for="elig-english-test" class="sr-only">English Language Test</label>
+      <select id="elig-english-test" name="english_test" required>
         <option value="">Select an option</option>
         <option>IELTS</option>
         <option>TOEFL</option>
@@ -139,7 +153,8 @@
 
     <div class="elig-step" data-step="6">
       <h3>Budget</h3>
-      <input type="text" name="annual_budget" placeholder="Approximate annual education budget" required>
+      <label for="elig-budget" class="sr-only">Approximate Annual Education Budget</label>
+      <input type="text" id="elig-budget" name="annual_budget" placeholder="Approximate annual education budget" required>
     </div>
 
     <div class="elig-step" data-step="7">
@@ -403,10 +418,14 @@
 
   <p class="form-label">Start Your Journey</p>
   <form class="contact-form" action="https://formspree.io/f/xqpzlewe" method="POST">
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email Address (optional)">
-    <input type="text" name="phone" placeholder="Phone / WhatsApp Number" required>
-    <select name="interest">
+    <label for="contact-name" class="sr-only">Full Name</label>
+    <input type="text" id="contact-name" name="name" placeholder="Full Name" required>
+    <label for="contact-email" class="sr-only">Email Address</label>
+    <input type="email" id="contact-email" name="email" placeholder="Email Address (optional)">
+    <label for="contact-phone" class="sr-only">Phone / WhatsApp Number</label>
+    <input type="text" id="contact-phone" name="phone" placeholder="Phone / WhatsApp Number" required>
+    <label for="contact-interest" class="sr-only">What are you interested in?</label>
+    <select id="contact-interest" name="interest">
       <option value="">What are you interested in?</option>
       <option>Study Abroad</option>
       <option>Admission Support</option>
@@ -417,10 +436,14 @@
       <option>Partnership</option>
       <option>Other</option>
     </select>
-    <input type="text" name="destination" placeholder="Preferred Destination">
-    <input type="text" name="intake" placeholder="Preferred Intake">
-    <input type="text" name="qualification" placeholder="Highest Qualification">
-    <textarea name="message" placeholder="Tell us about your goals" rows="4" required></textarea>
+    <label for="contact-destination" class="sr-only">Preferred Destination</label>
+    <input type="text" id="contact-destination" name="destination" placeholder="Preferred Destination">
+    <label for="contact-intake" class="sr-only">Preferred Intake</label>
+    <input type="text" id="contact-intake" name="intake" placeholder="Preferred Intake">
+    <label for="contact-qualification" class="sr-only">Highest Qualification</label>
+    <input type="text" id="contact-qualification" name="qualification" placeholder="Highest Qualification">
+    <label for="contact-message" class="sr-only">Tell us about your goals</label>
+    <textarea id="contact-message" name="message" placeholder="Tell us about your goals" rows="4" required></textarea>
     <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
     <button type="submit" class="btn-primary">Send My Enquiry</button>
   </form>

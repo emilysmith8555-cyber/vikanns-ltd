@@ -655,3 +655,6 @@ footer { background: #003d24; color: var(--white); padding: 50px 24px 20px; }
   white-space: nowrap;
   border: 0;
 }
+
+/* ---------------- Group nav CTA + hamburger at the right edge ---------------- */
+.nav-right { display: flex; align-items: center; gap: 12px; }

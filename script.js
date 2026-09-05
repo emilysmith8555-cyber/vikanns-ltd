@@ -117,7 +117,7 @@ document.addEventListener('click', function (event) {
       const activeStep = document.querySelector('.elig-step[data-step="' + current + '"]');
       const requiredFields = activeStep.querySelectorAll('[required]');
       for (const f of requiredFields) {
-        if (!f.value) { f.reportValidity(); return; }
+        if (!f.checkValidity()) { f.reportValidity(); return; }
       }
       if (current < totalSteps) {
         current++;

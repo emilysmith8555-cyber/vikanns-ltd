@@ -95,15 +95,15 @@
     <div class="elig-step active" data-step="1">
       <h3>Personal Information</h3>
       <label for="elig-full-name" class="sr-only">Full Name</label>
-      <input type="text" id="elig-full-name" name="full_name" placeholder="Full Name" required>
+      <input type="text" id="elig-full-name" name="full_name" placeholder="Full Name" required pattern="[A-Za-z'.-s]{2,}" title="Please enter a valid name using letters only">
       <label for="elig-email" class="sr-only">Email</label>
       <input type="email" id="elig-email" name="email" placeholder="Email" required>
       <label for="elig-whatsapp" class="sr-only">WhatsApp Number</label>
-      <input type="text" id="elig-whatsapp" name="whatsapp" placeholder="WhatsApp Number" required>
+      <input type="tel" id="elig-whatsapp" name="whatsapp" placeholder="WhatsApp Number" required pattern="[0-9+-s()]{7,}" title="Please enter a valid phone number">
       <label for="elig-age" class="sr-only">Age</label>
       <input type="number" id="elig-age" name="age" placeholder="Age" required min="10" max="100">
       <label for="elig-country" class="sr-only">Country of Residence</label>
-      <input type="text" id="elig-country" name="country_residence" placeholder="Country of Residence" required>
+      <input type="text" id="elig-country" name="country_residence" placeholder="Country of Residence" required pattern="[A-Za-z-s]{2,}" title="Please enter a valid country name using letters only">
     </div>
 
     <div class="elig-step" data-step="2">
@@ -430,11 +430,11 @@
   <p class="form-label">Start Your Journey</p>
   <form class="contact-form" action="https://formspree.io/f/xqpzlewe" method="POST">
     <label for="contact-name" class="sr-only">Full Name</label>
-    <input type="text" id="contact-name" name="name" placeholder="Full Name" required>
+    <input type="text" id="contact-name" name="name" placeholder="Full Name" required pattern="[A-Za-z'.-s]{2,}" title="Please enter a valid name using letters only">
     <label for="contact-email" class="sr-only">Email Address</label>
     <input type="email" id="contact-email" name="email" placeholder="Email Address (optional)">
     <label for="contact-phone" class="sr-only">Phone / WhatsApp Number</label>
-    <input type="text" id="contact-phone" name="phone" placeholder="Phone / WhatsApp Number" required>
+    <input type="tel" id="contact-phone" name="phone" placeholder="Phone / WhatsApp Number" required pattern="[0-9+-s()]{7,}" title="Please enter a valid phone number">
     <label for="contact-interest" class="sr-only">What are you interested in?</label>
     <select id="contact-interest" name="interest">
       <option value="">What are you interested in?</option>

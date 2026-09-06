@@ -713,3 +713,21 @@ footer { background: #003d24; color: var(--white); padding: 50px 24px 20px; }
 @media (min-width: 1400px) {
   .video-embed-wrapper { max-width: 760px; }
 }
+
+/* ---------------- Partnership certificate proof ---------------- */
+.partnership-proof {
+  max-width: 340px;
+  margin: 20px auto;
+  text-align: center;
+}
+.partnership-proof img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  display: block;
+}
+.partnership-proof figcaption {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 8px;
+}

@@ -751,3 +751,34 @@ footer { background: #003d24; color: var(--white); padding: 50px 24px 20px; }
   font-size: 0.78rem;
   color: rgba(255,255,255,0.8);
 }
+
+/* ---------------- Certificate badge in footer (responsive, overrides earlier rule) ---------------- */
+.footer-certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 24px auto;
+  max-width: 260px;
+  text-align: center;
+}
+.footer-certificate img {
+  width: 90px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.footer-certificate span {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.3;
+}
+@media (min-width: 768px) {
+  .footer-certificate img { width: 110px; }
+  .footer-certificate span { font-size: 0.82rem; }
+}
+@media (min-width: 1200px) {
+  .footer-certificate img { width: 130px; }
+  .footer-certificate span { font-size: 0.88rem; }
+}

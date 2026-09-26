@@ -731,3 +731,23 @@ footer { background: #003d24; color: var(--white); padding: 50px 24px 20px; }
   color: var(--muted);
   margin-top: 8px;
 }
+
+/* ---------------- Small certificate badge in footer ---------------- */
+.footer-certificate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 320px;
+}
+.footer-certificate img {
+  width: 60px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+.footer-certificate span {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.8);
+}
